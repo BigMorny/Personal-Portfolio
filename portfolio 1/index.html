@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu" class="nav-links">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p id="typed-role"></p>
+                <h1><span id="typed-greeting"></span><span id="typed-name"></span><br><span id="typed-location"></span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!------- About Section -------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Dedicated IT student at Ghana Communication Technology University, currently in the third year of study.
+                        Skilled in Python, HTML, CSS, JavaScript, and SQL, with a passion for creating functional and user-friendly systems.
+                        Seeking opportunities to apply my knowledge in software and hardware development and to grow as a professional in the tech field.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>EXCEL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>January 2025 - February 2025</span><br>Web Development & Frontend Projects</li>
+                            <li><span>February 2025 - April 2025</span><br>Internship at Ghana Revenue Authority (GRA)</li>
+                            <li><span>December 2024 - Present</span><br>Social Media Manager – Apple Xpairs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2026</span><br> BSC Information Technology At Ghana Communications Technology University</li>
+                            <li><span>2015 - 2018</span><br>General Science At Ghanata Senior High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------- Services ------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Development</h2>
+                    <p>Designing and developing responsive, user-friendly websites using HTML, CSS, and JavaScript.
+                        Hosting and managing websites on GitHub Pages.
+                        Enhancing UI/UX for better user experience.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Social Media Management</h2>
+                    <p>Managing and growing brand presence on social media platforms.
+                        Creating engaging content, running promotions, and increasing audience engagement.
+                        Using analytics tools to track and optimize social media performance.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tools"></i>
+                    <h2> IT Support & Troubleshooting</h2>
+                    <p>Assisting with hardware/software troubleshooting and system administration.
+                        Providing basic network and technical support.
+                        Helping with software installations, updates, and maintenance.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2> Git & Version Control</h2>
+                    <p>Setting up and managing projects using Git and GitHub.
+                        Collaborating with teams using branching, pull requests, and repository management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-------Portfolio--------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Iphone E-commerce Website</h3>
+                    <p>Phone Selling, Swapping & Repair Website. A functional web platform for users to sell, swap, and repair iPhones seamlessly.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="Project 2">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website showcasing my skills, experience, and projects in web development.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="Project 3">
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>A music streaming web application allowing users to log in and listen to their favorite songs.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------Contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="sub-title"> Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>harrisonmorny2001@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0543115560</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1BAHd74T7f/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/mornyharrisonn?s=21"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/morny-harrison?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/BigMorny"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.instagram.com/morny_harrison_edem?igsh=MXFhd3hmMXpla3BqZg=="><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <a href="images/Harrison Edem Morny Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Harrison's Personal Portfolio Made with <i class="fa-solid fa-heart"></i>All Rights Reserved</p>
+    </div>
+</div>
+
+<!-- Link to external JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

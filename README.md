@@ -34,7 +34,7 @@ Google Sheets for receiving form entries
 
 Hosting Information
 
-The website is hosted on Netlify and is accessible at https://harrisonmornyportfolio.netlify.app/.
+The website is hosted on Netlify and is accessible at (https://mornyharrisonedemportfolio.netlify.app/)
 
 Future Improvements
 
